@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Juego del Impostor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>👽 El Impostor 🕵️</h1>
+        </header>
+        <section id="config-section" class="game-section">
+            <div id="count-selection-section">
+                <h2>¿Cuántos jugadores?</h2>
+                <div class="input-group">
+                    <input type="number" id="player-count-input" placeholder="Min. 5, Max. 10 jugadores" min="3" max="10" value="3" required>
+                </div>
+                <button type="button" id="set-count-btn">Establecer Jugadores</button>
+            </div>
+            <form id="player-form" class="hidden">
+                <h2>Introduce los Nombres</h2>
+                <div id="name-input-container" class="input-group">
+                    </div>
+                <button type="submit" id="start-game-btn">Aceptar y Empezar</button>
+            </form>           
+        </section>
+        <section id="role-distribution-section" class="game-section hidden">
+            <h2 id="current-player-name">¡Turno de [Nombre del Jugador]!</h2>
+            <p>Pulsa el botón de abajo para ver tu palabra/pista.</p>
+            <div id="role-display" class="role-box">
+                <p id="word-or-clue-text">...</p>
+                <button id="show-word-clue-btn">Mostrar Palabra/Pista</button>
+            </div>            
+            <button id="next-player-btn" class="hidden">Continuar al Siguiente Jugador</button>
+            <button id="start-discussion-btn" class="hidden">Comenzar Partida</button>
+        </section>
+        <section id="game-discussion-section" class="game-section hidden">
+            <h2>Hora de la Discusión 🗣️</h2>
+            <p id="starting-player-text">¡La partida comienza! Empieza a hablar...</p>
+            <button id="reveal-impostor-btn">Revelar Impostor</button>
+            <div id="reveal-result" class="reveal-box hidden">
+                <h3>El Impostor es:</h3>
+                <p id="impostor-name-display">...</p>
+            </div>
+            <div id="end-game-actions" class="hidden action-buttons">
+                <button id="restart-same-players-btn">Reiniciar con mismos jugadores</button>
+                <button id="back-to-home-btn">Volver al Inicio</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

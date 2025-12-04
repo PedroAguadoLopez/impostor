@@ -1,0 +1,42 @@
+[
+    {
+        "palabra": "Cristiano Ronaldo",
+        "pista_impostor": "Histórico"
+    },
+    {
+        "palabra": "Ronaldinho",
+        "pista_impostor": "Samba"
+    },
+    {
+        "palabra": "Joaquín Sánchez",
+        "pista_impostor": "Picha"
+    },
+    {
+        "palabra": "Antony",
+        "pista_impostor": "Goat"
+    },
+    {
+        "palabra": "Messi",
+        "pista_impostor": "Bobo"
+    },
+    {
+        "palabra": "Maradona",
+        "pista_impostor": "Dios"
+    },
+    {
+        "palabra": "Pelé",
+        "pista_impostor": "Brasil"
+    },
+    {
+        "palabra": "Iniesta",
+        "pista_impostor": "Kalise"
+    },
+    {
+        "palabra": "Casillas",
+        "pista_impostor": "El santo"
+    },
+    {
+        "palabra": "Carles Puyol",
+        "pista_impostor": "Tiburón"
+    }
+]
